@@ -17,6 +17,8 @@ C2007CB8 A163BF05 98DA4836 1C55D39A 69163FA8 FD24CF5F
 670C354E 4ABC9804 F1746C08 CA237327 FFFFFFFF FFFFFFFF"""
 # Convert from the value supplied in the RFC to an integer
 prime = read_hex(raw_prime)
+print("wat")
+create_dh_key()
 
 # Project TODO: write the appropriate code to perform DH key exchange
 
@@ -24,6 +26,7 @@ def create_dh_key():
     # Creates a Diffie-Hellman key
     # Returns (public, private)
     a = random.randint(0, int(2**8))
+    print(a)
     return (a, a)
 
 def calculate_dh_secret(their_public, my_private):

@@ -105,6 +105,8 @@ Table of Contents
 
      KM = H ( ZZ || OtherInfo)
 
+     ************ LAB 1 CHECK IF SUFFIX OR WHAT ***************
+
    H is the message digest function SHA-1 [FIPS-180] ZZ is the shared
    secret value computed in Section 2.1.1. Leading zeros MUST be
    preserved, so that ZZ occupies as many octets as p. For instance, if
