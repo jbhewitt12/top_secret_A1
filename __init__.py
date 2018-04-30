@@ -57,7 +57,7 @@ prime = read_hex(chosen_prime)
 
 # Project TODO: write the appropriate code to perform DH key exchange
 
-def create_dh_key(generator, prime):
+def create_dh_key():
     # Creates a Diffie-Hellman key
     # Returns (public, private)
     private_key = random.randint(0, int(2**8)) # In other diffie hellman examples I've seen they use 2**10 = 1024 bits
@@ -68,7 +68,7 @@ def create_dh_key(generator, prime):
     print(public_key)
     return (private_key, public_key)
 
-def calculate_dh_secret(their_public, my_private, prime):
+def calculate_dh_secret(their_public, my_private):
     # Calculate the shared secret
     shared_secret = (their_public ** my_private) % prime
 
